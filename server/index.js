@@ -7,6 +7,7 @@ import router from "./routes/productRoutes.js";
 dotenv.config();
 
 const app = express();
+app.use('/api', router);
 
 app.use(cors());
 
